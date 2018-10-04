@@ -5,6 +5,12 @@
 }
 
 <h2>Customers</h2>
+@using (Html.BeginForm("New", "Customer"))
+{
+    <div class="form-group">
+        <input type="submit" value="New Customer" class="btn btn-primary" />
+    </div>
+}
 
 <table class="table table-bordered table-hover">
     <thead>
@@ -22,6 +28,6 @@
             </tr>
         }
     </tbody>
-            
+
 </table>
 
